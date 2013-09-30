@@ -1,0 +1,10 @@
+{
+  "name": "http-poll-demo",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "3.4.0",
+    "mysql": "*",
+    "orm": "*",
+    "socket.io": "*"
+  }
+}

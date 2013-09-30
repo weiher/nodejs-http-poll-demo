@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://editor.lacerta.uberspace.de:61616/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+  
+<script src="http://code.angularjs.org/1.1.5/angular-resource.js"></script>
+
+<script src="/demo/app.js"></script>
+  
+<meta name="description" content="Angular Test" />
+<meta charset=utf-8 />
+<title>Angular Socket</title>
+</head>
+<body data-ng-app="app">
+
+  <div data-ng-controller="pollCtrl">
+    
+    <div data-ng-repeat="entry in entries">
+      {{entry.message}}
+    </div>
+    
+    <button data-ng-click="poll()">poll</button>
+    <br/>
+    <input data-ng-model="value"/>
+    <button data-ng-click="add()">add</button>
+  </div>
+</body>
+</html>
